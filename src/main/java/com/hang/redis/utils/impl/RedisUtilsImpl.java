@@ -16,6 +16,7 @@ import java.util.concurrent.TimeUnit;
 /**
  * redis 实现类
  *
+ * @author Hang W 
  */
 @Component
 @SuppressWarnings("all")

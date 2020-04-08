@@ -46,7 +46,7 @@ public class QueryBusinessImpl implements QueryBusiness {
     public int getStock(String key) {
 
         // lock
-        boolean flag = redisUtils.lock(STOCK, com.hang.redis.utils.StringUtils.getRequestId(), 120000);
+        boolean flag = redisUtils.lock(STOCK, com.hang.redis.utils.StringUtils.getRequestId(), 120000); // time 120000
 
         int count = 0;
         try {
